@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.Moter.autocare">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.AutoCare"
+        tools:targetApi="31">
+        <activity
+            android:name=".AdminActivities.Insurance.Update.UpdateInsuranceDetail"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActivities.Insurance.Update.StateSpinnerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActivities.Insurance.Delete.DeleteInsurance"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActivities.Insurance.Update.UpdateInsurance"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActivities.DealerShip.ShowRegisterCars"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActivities.Insurance.CRUDActvity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Dealing.BuyCar.ContactActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Dealing.BuyCar.ShowCarDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Dealing.SellCar.AddCarForSellActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Dealing.BuyCar.ShowCarsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Dealing.BuyCar.SelectRegionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Dealing.DealingMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CarInsurance.InvoiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CarInsurance.PaymentIntegration"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActivities.Insurance.Add.AddInsuranceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActivities.AdminMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CarInsurance.InsuranceDealerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CarInsurance.BuyCarInsurance"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CarInsurance.CarRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CarInsurance.InsuranceMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.Register"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.Login"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_4ejTSEM7kk1QY3" />
+        <meta-data
+            android:name="com.google.gms.wallet.api.enabled"
+            android:value="true" />
+    </application>
+
+</manifest>
